@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <iomanip>
 using namespace std;
 
@@ -34,23 +33,18 @@ N 11 2 N 9
 */
 
 int main() {
-    int n, i, tmp, sum1, len1, sum2, len2, len3, sum4, len4, max5, len5;
-    sum1=len1=sum2=len2=len3=sum4=len4=max5=len5 = 0;
+    int n, i, tmp, sum1, sum2, len2, len3, sum4, len4, max5;
+    sum1=sum2=len2=len3=sum4=len4=max5 = 0;
     bool flag2 = true;
     cin>>n;
     for(i=0; i<n; i++) {
         cin>>tmp;
         if(tmp%5==0 && tmp%2==0) {
-            len1++;
             sum1 += tmp;
         }
         if(tmp%5==1) {
             len2++;
-            if(flag2) {
-                sum2 += tmp;
-            }else {
-                sum2 -= tmp;
-            }
+            sum2 = flag2 ? sum2+tmp : sum2-tmp;
             flag2 = !flag2;
         }
         if(tmp%5==2) {
@@ -61,13 +55,12 @@ int main() {
             sum4 += tmp;
         }
         if(tmp%5==4) {
-            len5++;
             if(tmp>max5) {
                 max5 = tmp;
             }
         }
     }
-    if(len1) {
+    if(sum1) {
         cout<<sum1<<" ";
     }else {
         cout<<"N ";
@@ -83,12 +76,12 @@ int main() {
         cout<<"N ";
     }
     if(len4) {
-        double x = (sum4*1.0)/(len4*1.0);
-        cout<<setprecision(2)<<x<<" ";
+        double x = sum4/(double)len4;
+        printf("%0.1lf ", x);
     }else {
         cout<<"N ";
     }
-    if(len5) {
+    if(max5) {
         cout<<max5;
     }else {
         cout<<"N";

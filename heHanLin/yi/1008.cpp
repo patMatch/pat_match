@@ -24,6 +24,7 @@ int main() {
     for(i=0; i<n; i++) {
         cin>>arr[i];
     }
+    per = per%n;
     for(j=0, i=n-per; j<n; j++, i++) {
         cout<<arr[i%n]<<(j==n-1 ? "" : " ");
     }
