@@ -14,28 +14,40 @@ int main()
 	len1 = strlen(a[1]);
 	for(i=0; i<len; i++)
 	{
-		if(a[0][i]>='A' && a[0][i]<='Z')
+		if(a[0][i]>='A' && a[0][i]<='G')
 		{
-			for(j=0; j<len1; j++)
-			{
-				if(a[0][i] == a[1][j])
-				b[k++]=a[0][i];
-			}
+			if(a[0][i] == a[1][i]){
+				b[0]=a[0][i];
+				break; 
+		    } 
+		}
+	}
+	for(i=i+1; i<len; i++)
+	{
+		if(a[0][i]>='A' && a[0][i]<='N' || a[0][i]>='0' && a[0][i]<='9')
+		{
+			if(a[0][i] == a[1][i]){
+				b[1]=a[0][i];
+				break;
+			} 
 		}
 	}
 	printf("%s ", c[b[0]-'A']);
-	printf("%d:", b[1]-'A'+10);
+	if(b[1]>='0' && b[1]<='9'){
+		printf("0%d:", b[1]-'0');
+	}else{
+		printf("%d:", b[1]-'A'+10);
+	}
 	len = strlen(a[2]);
 	len1 = strlen(a[3]);
 	for(i=0; i<len; i++)
 	{
-		for(j=0; j<len1; j++)
-		{
-			if(a[2][i] == a[3][j])
-			d=j;
-		}
-		if(d!=-1)
-		break;
+		if(a[2][i]>='a' && a[2][i]<='z' || a[2][i]>='A' && a[2][i]<='Z'){
+			if(a[2][i] == a[3][i]){
+				d=i;
+				break;	 
+	        } 
+		}	
 	}
 	if(d/10==0)
 	printf("0%d", d);
