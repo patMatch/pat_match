@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[])
 {
 	int n=0;
-	// printf("请输入三位整数n\n");
+	// printf("脟毛脢盲脠毛脠媒脦禄脮没脢媒n\n");
 	scanf("%d",&n);
 	for (int i = 0; i < n/100; ++i){
 		printf("B");
