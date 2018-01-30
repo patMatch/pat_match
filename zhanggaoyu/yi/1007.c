@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 	int n=0,flag=1;
 	int cnt=0;
 	int p=2,q;
-	// printf("请输入正整数N\n");
+	// printf("脟毛脢盲脠毛脮媒脮没脢媒N\n");
 	scanf("%d",&n);
 	for (int i = 3; i <= n; i+=2){
 		flag=1;
