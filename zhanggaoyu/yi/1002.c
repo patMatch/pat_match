@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 	char Output[10][5]={"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
 	char Input[100];
 	int result[5];
-	//printf("ÇëÊäÈëÊı×Ö\n");
+	//printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«ÃŠÃ½Ã—Ã–\n");
 	scanf("%s",Input);
 	for (int i = 0; i < 5; ++i)
 	{
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
 			break;
 		}
 	}
-	//printf("½á¹ûÎª£º");
+	//printf("Â½Ã¡Â¹Ã»ÃÂªÂ£Âº");
 	for (int i = 4; i>=0; --i)
 	{
 		if (-1==result[i]){
