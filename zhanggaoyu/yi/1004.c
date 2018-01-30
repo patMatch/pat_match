@@ -12,10 +12,10 @@ int main(int argc, char const *argv[])
 	Stu*stu=NULL;
 	int n=0;
 	int max=0,min=0,maxi=0,mini=0;
-	// printf("请输入n\n");
+	// printf("脟毛脢盲脠毛n\n");
 	scanf("%d",&n);
 	stu=(Stu*)malloc(n*sizeof(Stu));
-	// printf("请输入学生信息\n");
+	// printf("脟毛脢盲脠毛脩搂脡煤脨脜脧垄\n");
 	for (int i = 0; i < n; ++i){
 		scanf("%s%s%d",&stu[i].name,&stu[i].number,&stu[i].grade);
 	}
