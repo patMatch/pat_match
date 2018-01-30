@@ -7,13 +7,13 @@ int main(int argc, char const *argv[])
     int cntp=0,cntt=0,cnta=0;
     char **s;
     int p1,p2,l;
-    // printf("ÇëÊäÈën\n");
+    // printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«n\n");
     scanf("%d",&n);
     s=(char**)malloc(n*sizeof(char*));
     for (int i = 0; i < n; ++i){
     	s[i]=(char*)malloc(100*sizeof(char));
     }
-    // printf("ÇëÊäÈë×Ö·û´®\n");
+    // printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«Ã—Ã–Â·Ã»Â´Â®\n");
     for (int i = 0; i < n; ++i){
         scanf("%s",s[i]);
     }
