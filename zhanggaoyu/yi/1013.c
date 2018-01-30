@@ -4,9 +4,9 @@
 
 int main(int argc, char const *argv[])
 {
-	int m,n;					//ÓÃÀ´´æ´¢²ÎÊým n
-	int cnt=0,flag=1;			//ÓÃÀ´Í³¼ÆËØÊýµÄ¸öÊý
-	int *a=NULL;				//ÓÃÀ´´æ´¢ËùÓÐµÄËØÊý
+	int m,n;					//ç”¨æ¥å­˜å‚¨å‚æ•°m n
+	int cnt=0,flag=1;			//ç”¨æ¥ç»Ÿè®¡ç´ æ•°çš„ä¸ªæ•°
+	int *a=NULL;				//ç”¨æ¥å­˜å‚¨æ‰€æœ‰çš„ç´ æ•°
 	scanf("%d%d",&m,&n);
 	a=(int*)malloc(n*sizeof(int));
 	if (n>=1){
