@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include <stdlib.h>
 
-void sort(int *,int );//≈≈–Ú
+void sort(int *,int );//√Ö√Ö√ê√≤
 int main()
 {
     int *a;
