@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 {
 	long **a;
 	int n=0;
-	// printf("ÇëÊäÈën\n");
+	// printf("è¯·è¾“å…¥n\n");
 	scanf("%d",&n);
 	a=(long**)malloc(n*sizeof(long*));
 	for (int i = 0; i < n; ++i){
@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
 	}
 	for (int i = 0; i < n; ++i){
 		printf("Case #%d: ", i+1);
-		if (a[i][0] > a[i][2] - a[i][1]){				//ÒòÎª  +  »áÓĞ×î´óÖµÒç³öµÄ¿ÉÄÜ£¬ËùÒÔ²»·ÁÓÃ    -    µÄ
+		if (a[i][0] > a[i][2] - a[i][1]){				//å› ä¸º  +  ä¼šæœ‰æœ€å¤§å€¼æº¢å‡ºçš„å¯èƒ½ï¼Œæ‰€ä»¥ä¸å¦¨ç”¨    -    çš„
 			printf("true\n");
 		}else{
 			printf("false\n");
